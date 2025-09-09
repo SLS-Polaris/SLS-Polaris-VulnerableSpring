@@ -29,8 +29,8 @@ jobs:
           polaris_access_token: ${{ secrets.POLARIS_ACCESS_TOKEN }}
           polaris_assessment_types: SAST,SCA
           polaris_assessment_mode: SOURCE_UPLOAD
-          polaris_application_name: SLS-${{ github.event.organization.name }}
-          # polaris.project.name: ${{ github.event.repository.name }}
+          polaris_application_name: SLS-GitHub-App
+          polaris.project.name: SLS-Polaris-VulnerableSpring
           polaris_waitForScan: true
           mark_build_status: failure
           include_diagnostics: false
