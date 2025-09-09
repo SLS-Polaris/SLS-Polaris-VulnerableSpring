@@ -30,7 +30,7 @@ jobs:
           polaris_assessment_types: SAST,SCA
           polaris_assessment_mode: SOURCE_UPLOAD
           polaris_application_name: ${{ github.event.organization.name }}
-          polaris.project.name: ${{ github.event.repository.name }}
+          # polaris.project.name: ${{ github.event.repository.name }}
           polaris_waitForScan: true
           mark_build_status: failure
           include_diagnostics: false
